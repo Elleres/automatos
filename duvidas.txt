@@ -1,0 +1,13 @@
+Primeira questão:
+    Nome 3: Não é a mesma coisa que o nome do meio ser opcional?
+
+    Email 5: é dito que é necessário ter ao menos 1 caractere minúsculo após o "@" e antes do ".com.br" ou ".br".
+    Por que a cadeia T@teste.br é rejeitada?
+
+    Senhas 2: consertar Senhas2 "aAsasdasdasdasd0"
+
+    Senhas 3: "abcdefgH" por que essa cadeia é rejeitada?
+
+    Telefone 1: Otimizar se tiver tempo "((\([0-9]{2}\) 9[0-9]{4}-[0-9]{4})|(\([0-9]{2}\) 9[0-9]{4}[0-9]{4})|([0-9]{2} 9[0-9]{8}))"
+    otimizada mas falhando na segunda cadeia rejeitada: "\(?[0-9]{2}\)? 9[0-9]{4}([0-9]{4}|-[0-9]{4})"
+

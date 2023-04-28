@@ -11,3 +11,5 @@ Primeira questão:
     Telefone 1: Otimizar se tiver tempo "((\([0-9]{2}\) 9[0-9]{4}-[0-9]{4})|(\([0-9]{2}\) 9[0-9]{4}[0-9]{4})|([0-9]{2} 9[0-9]{8}))"
     otimizada mas falhando na segunda cadeia rejeitada: "\(?[0-9]{2}\)? 9[0-9]{4}([0-9]{4}|-[0-9]{4})"
 
+Segunda questão:
+    As expressões que estiverem comentadas não estão corretas ou estão incompletas.

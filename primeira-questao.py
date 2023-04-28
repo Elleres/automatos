@@ -6,8 +6,6 @@ import re
     Para fazer isso, mude a variável fraseTeste e altere o primeiro parâmetro
     da função fullmatch para uma das expressões regulares abaixo.
 """
-
-
 # Nome, nome do meio e sobrenome
 
 # Considere os seguintes alfabetos Σ = {a, b, c, …, z}, Γ = {A, B, C, …, Z} e N = {0, 1, 2, …, 9}.
@@ -78,11 +76,6 @@ reSenhas3 = re.compile(r"[A-z0-9]{8}")
 
 reCPF1 = re.compile(r"([0-9]{3}.){2}[0-9]{3}-[0-9]{2}")
 
-fraseTeste = "AAAA210A"
-resultado = re.fullmatch(reSenhas3, fraseTeste)
-
-print(resultado)
-
 # Telefone
 
 # 1) Sentenças devem ter um dos formatos seguintes
@@ -118,3 +111,7 @@ reNum4 = re.compile(r"[+ -]?[0-9]+\.[0-9]+")
 # 5) Exceção: números sem a parte fracionária também devem ser aceitos
 
 reNum5 = re.compile(r"[+ -]?[0-9]+(\.[0-9]+)?")
+
+fraseTeste = "AAAA210A"
+resultado = re.fullmatch(reSenhas3, fraseTeste)
+print(resultado)

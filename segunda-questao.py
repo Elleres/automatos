@@ -16,7 +16,7 @@ import re
 # B) Casais heterossexuais mais velhos que os filhos e com uma quantidade ímpar de filhas
 # mulheres.
 
-# reB = re.compile()
+reB = re.compile(r"(HM|MH)((mh*mh*m|h*)+)|m")
 
 # C) Casais heterossexuais mais velhos que os filhos, com a filha mais velha mulher e o filho
 # mais novo homem
@@ -45,6 +45,6 @@ reF = re.compile(r"(MM|HH)(mm|hm|m)*(h|mh)?")
 reG = re.compile(r"(M|H)+(h|m)*(m|mh|mhh)|\\s|h|hh")
 
 fraseTeste = "MMhmhmhmhm"
-resposta = re.fullmatch(reE, fraseTeste)
+resposta = re.fullmatch(reG, fraseTeste)
 
 print(resposta)

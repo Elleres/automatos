@@ -31,17 +31,18 @@ reD = re.compile(r"(MM|HH)(hm|mh)[h m]{2}[h m]*(hm|mh)")
 # E) Casais homossexuais mais velhos que os filhos, em que o sexo dos filhos é alternado
 # conforme a ordem de nascimento
 
-reE = re.compile(r"(MM|HH)(hm)*|(mh)*")
+reE = re.compile(r"(MM|HH)(hm)|(mh)")
 
 # F) Casais homossexuais mais velhos que os filhos, com qualquer quantidade de filhos
 # homens e mulheres, mas que não tiveram dois filhos homens consecutivos.
 
-#reF = re.compile()
+reF = re.compile(r"(MM|HH)(mm|hm|m)*(h|mh)?")
 
 # G)  Arranjo de no mínimo x∈ℕ e no máximo y∈ℕ , com x>0 , y>0 , e x≤y , de
 # adultos (Hs ou Ms) mais velhos que os filhos, com qualquer quantidade de filhos
 # homens e mulheres, mas que os três filhos mais novos não foram homens.
 
+reG = re.compile(r"(M|H)+(h|m)*(m|mh|mhh)|\\s|h|hh")
 
 fraseTeste = "MMhmhmhmhm"
 resposta = re.fullmatch(reE, fraseTeste)

@@ -16,7 +16,7 @@ import re
 # B) Casais heterossexuais mais velhos que os filhos e com uma quantidade ímpar de filhas
 # mulheres.
 
-reB = re.compile(r"(HM|MH)((mh*mh*m|h*)+)|m")
+reB = re.compile(r"(HM|MH)h*mh*(h*mh*mh*)*")
 
 # C) Casais heterossexuais mais velhos que os filhos, com a filha mais velha mulher e o filho
 # mais novo homem

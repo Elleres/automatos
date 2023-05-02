@@ -93,10 +93,25 @@ reDH = re.compile(
 # Número real com ou sem sinal
 
 # 1) Sentenças devem começar com um dos símbolos do alfabeto {+, -, ε}
+
+reNum1 = re.compile(r"[+ -]?[0-9A-z]*")
+
 # 2) Em seguida, as sentenças devem ter, pelo menos, um símbolo do alfabeto N
+
+reNum2 = re.compile(r"[+ -]?[0-9]+")
+
 # 3) Em seguida, as sentenças devem ter, exatamente, um símbolo separador “.”
+
+reNum3 = re.compile(r"[+ -]?[0-9]+\.")
+
 # 4) Em seguida, as sentenças devem finalizar com, pelo menos, um símbolo de N
+
+reNum4 = re.compile(r"[+ -]?[0-9]+\.[0-9]+")
+
 # 5) Exceção: números sem a parte fracionária também devem ser aceitos
+
+reNum5 = re.compile(r"[+ -]?[0-9]+(\.[0-9]+)?")
+
 
 reNum = re.compile(r"[+ -]?[0-9]+(\.[0-9]+)?")
 

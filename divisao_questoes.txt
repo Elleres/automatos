@@ -1,0 +1,9 @@
+1.
+nome, email, senha: elton
+cpf, telefone: arthur
+data, numero: pedro
+2.
+a, b: yuri
+c: pedro
+d: arthur
+e, f, g: rafael

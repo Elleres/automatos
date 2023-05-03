@@ -100,9 +100,6 @@ reDH = re.compile(
 
 reNum = re.compile(r"[+ -]?[0-9]+(\.[0-9]+)?")
 
-
-reNum = re.compile(r"[+ -]?[0-9]+(\.[0-9]+)?")
-
 fraseTeste = "AAAA210A"
 resultado = re.fullmatch(reSenhas3, fraseTeste)
 print(resultado)
